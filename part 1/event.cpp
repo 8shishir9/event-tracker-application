@@ -2,6 +2,22 @@
 #include "event.h"
 using namespace seneca;
 
+
+
+Event::Event(const Event &e){
+
+
+
+
+};
+
+
+Event& Event::operator=(const Event &e){
+
+
+
+
+};
 void Event::display(){
     static int COUNTER[2]={0,0};
     COUNTER[0]++;
