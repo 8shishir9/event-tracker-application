@@ -1,0 +1,16 @@
+//==============================================
+// Name:           Shisir Bastakoti
+// Student Number: 1395758221
+// Email:          sbastakoti@myseneca.ca
+// Section:        NHH
+// Date:           2024-1-20
+// Workshop:       Workshop1
+//==============================================
+// reflect.txt
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+By competing this workshop , I learnt about how internal and external linkage works .Specifically , the static keyword  i used to maintain counter variable's life between functions to maintain the counter. I learnt that internal linkage happens inside one translation unit while external linkage is BETWEEN translation units. Here, w1_p2.cpp and event.cpp(including event.h) are two different translation units so to share the global timer variable between them , I had to use extern keyword. Howerver, declaring extern keyword to the variable shoould be confused as allocating memory for that variable. The actual variable declaration happens in the other translation unit to which it is shared to.
+
+I upgraded the character array of descriptuion from static allocation to dynamic pointers so that I can accept chars of any length, Doing so , I implemented the necessary rule of three and other steps to avoid memory leaks and segmentation faults.
+

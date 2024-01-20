@@ -1,16 +1,27 @@
+//==============================================
+// Name:           Shisir Bastakoti
+// Student Number: 1395758221
+// Email:          sbastakoti@myseneca.ca
+// Section:        NHH
+// Date:           2024-1-20
+// Workshop:       Workshop1
+//==============================================
+// w1_p1.cpp
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
 #include "event.h"
 #include "event.h"
 
-
-// Cheching if header guards exist and follow convention.
+// Checking if header guards exist and follow convention.
 #ifndef SENECA_EVENT_H
     #error "The header guard for 'Event.h' doesn't follow the convention!"
 #endif
 
 int cout = 0; // won't compile if headers don't follow convention regarding namespaces
+
 
 /* input file format: a comma separated set of fields; some fields have a single parameter
 T175,SComputer Starting,P,
@@ -26,14 +37,18 @@ codes
 // TODO: write the prototype for the main function
 //         to accept command line arguments
 
-{
+int main(int argc, char *argv[]){
+
 	std::cout << "Command Line:\n";
 	std::cout << "--------------------------\n";
+	 for (auto i = 0; i < argc; ++i)
+        std::cout <<std::setw(3)<< i +1 << ": "<< argv[i] << std::endl;
 	// TODO: print the command line here, in the format
 	//   1: first argument
 	//   2: second argument
 	//   3: third argument
 	//   ...
+
 
 	std::cout << "--------------------------\n\n";
 
@@ -93,7 +108,7 @@ codes
 				case 'E': // end the current event
 					currentEvent.set();
 					break;
-				case 'P': // print to scren the information about the current event
+				case 'P': // print to screen the information about the current event
 					currentEvent.display();
 					break;
 				case 'A': // add a copy of the current event to the archive
@@ -112,6 +127,6 @@ codes
 	for (auto i = 0u; i < idxArchive; ++i)
 		archive[i].display();
 	std::cout << "--------------------\n";
-
+	
 	return cout;
 }

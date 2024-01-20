@@ -2,8 +2,7 @@ Command Line:
 --------------------------
   1: ws
   2: monday.txt
-  3: missing.txt
-  4: tuesday.txt
+  3: tuesday.txt
 --------------------------
 
 --------------------
@@ -18,10 +17,6 @@ Command Line:
  7. 17:33:33 => User checks email
 --------------------
     Day 2
---------------------
-Cannot open file [missing.txt]. Ignoring it!
---------------------
-    Day 3
 --------------------
  8. 01:02:23 => User starts working on homework
  9. | No Event |
