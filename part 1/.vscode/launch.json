@@ -6,10 +6,10 @@
       "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
+      "stopAtEntry": true,
+      "externalConsole": false,
       "cwd": "c:/Users/basta/OneDrive/Desktop/Univers/cloned/OOP345-Workshops/WS01/part 1",
-      "program": "c:/Users/basta/OneDrive/Desktop/Univers/cloned/OOP345-Workshops/WS01/part 1/build/Debug/outDebug",
+      "program": "c:/Users/basta/OneDrive/Desktop/Univers/cloned/OOP345-Workshops/WS01/part 1/ws.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

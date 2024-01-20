@@ -1,3 +1,14 @@
+//==============================================
+// Name:           Shisir Bastakoti
+// Student Number: 1395758221
+// Email:          sbastakoti@myseneca.ca
+// Section:        NHH
+// Date:           2024-1-20
+// Workshop:       Workshop1
+//==============================================
+// w1_p1.cpp
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -27,10 +38,11 @@ codes
 //         to accept command line arguments
 
 int main(int argc, char *argv[]){
+
 	std::cout << "Command Line:\n";
 	std::cout << "--------------------------\n";
-	 for (auto i = 1; i < argc; i++)
-        std::cout << i << ": "<< argv[i] << std::endl;
+	 for (auto i = 0; i < argc; ++i)
+        std::cout <<std::setw(3)<< i +1 << ": "<< argv[i] << std::endl;
 	// TODO: print the command line here, in the format
 	//   1: first argument
 	//   2: second argument
